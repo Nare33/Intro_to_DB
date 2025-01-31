@@ -1,6 +1,6 @@
 -- task_4.sql
--- This script retrieves the full description of the 'books' table
--- from the given MySQL database
+-- This script retrieves the full description of the 'Books' table
+-- from the 'alx_book_store' database
 
 SELECT 
     COLUMN_NAME, 
@@ -16,8 +16,8 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE() 
-    AND TABLE_NAME = 'books';
+    TABLE_SCHEMA = 'alx_book_store'
+    AND TABLE_NAME = 'Books';
 
-mysql -u your_username -p your_database_name < task_4.sql
+mysql -u your_username -p alx_book_store < task_4.sql
 
