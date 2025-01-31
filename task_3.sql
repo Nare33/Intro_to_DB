@@ -1,12 +1,9 @@
--- task_3.sql
+i-- task_3.sql
+-- This script lists all tables in the given MySQL database
 
--- List all tables in the specified database
+USE alx_book_store;
+
 SHOW TABLES;
 
-mysql -u your_root -p -D alx_book_store < task_3.sql
-
-Intro_to_DB/
-│
-├── task_3.sql
-└── (other files...)
+mysql -u your_username -p your_database_name < task_3.sql
 
