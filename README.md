@@ -1,2 +1,1 @@
-# Intro_to_DB
-introduction to SQL
+My first readme
