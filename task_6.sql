@@ -1,11 +1,13 @@
 -- task_6.sql
 
--- No database selection needed here; it's passed via the command line.
+USE alx_book_store;
 
-INSERT INTO Customers (customer_name, email, address) VALUES
-('Blessing Malik', 'bmalik@sandtech.com', '124 Happiness  Ave.'),  -- Double spaces in address
-('Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness  Ave.'),  -- Double spaces in address
-('Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness  Ave.');  -- Double spaces in address
+INSERT INTO customer (customer_id, customer_name, email, address) 
+VALUES 
+    (2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness Ave.'),
+    (3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness Ave.'),
+    (4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness Ave.');
 
-mysql -u your_user -p -h your_host alx_book_store < task_6.sql
+mysql -u root -p alx_book_store < task_6.sql
+
 
